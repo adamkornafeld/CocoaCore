@@ -9,13 +9,14 @@
 import Foundation
 import CocoaLumberjackSwift
 
-public class App {
+@objc
+public class App : NSObject {
     
     public static let instance = App()
     
     public let contextCoordinator = ContextCoordinator()
     
-    public init() {
+    public override init() {
         DDLogVerbose("App init")
     }
     

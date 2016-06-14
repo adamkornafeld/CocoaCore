@@ -10,7 +10,8 @@ import Foundation
 import CoreData
 import CocoaLumberjackSwift
 
-public class ContextCoordinator {
+@objc
+public class ContextCoordinator : NSObject {
     
     var persistentStoreCoordinatorOptions: NSDictionary {
         get {
@@ -70,7 +71,7 @@ public class ContextCoordinator {
         }
     }
     
-    init() {
+    override init() {
         DDLogVerbose("ContextCoordinator init")
     }
     
