@@ -197,11 +197,6 @@
 		C60685CA1D0FB22C00E1238E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				C6721C021D0E1DEB001097F0 /* Managed Objects */,
-				C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */,
-				C6E1D82A1D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift */,
-				C6E1D82B1D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift */,
-				C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -229,26 +224,23 @@
 		C6721BAF1D0DF384001097F0 /* CocoaCore */ = {
 			isa = PBXGroup;
 			children = (
-				C6721BB81D0DF3A2001097F0 /* Classes */,
+				C60685CA1D0FB22C00E1238E /* Data */,
+				C6721C021D0E1DEB001097F0 /* Managed Objects */,
+				C6E1D8391D0FA2E7007B7630 /* Entity.swift */,
+				C6E1D83A1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift */,
+				C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */,
+				C6E1D82A1D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift */,
+				C6E1D82B1D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift */,
+				C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */,
+				C60685B91D0FB21E00E1238E /* Controller */,
 			);
 			name = CocoaCore;
 			path = SkeletonCore;
 			sourceTree = "<group>";
 		};
-		C6721BB81D0DF3A2001097F0 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C60685CA1D0FB22C00E1238E /* Data */,
-				C60685B91D0FB21E00E1238E /* Controller */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		C6721C021D0E1DEB001097F0 /* Managed Objects */ = {
 			isa = PBXGroup;
 			children = (
-				C6E1D8391D0FA2E7007B7630 /* Entity.swift */,
-				C6E1D83A1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift */,
 			);
 			name = "Managed Objects";
 			sourceTree = "<group>";
