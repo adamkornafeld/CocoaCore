@@ -22,6 +22,6 @@ public class LogFormatter: DDDispatchQueueLogFormatter {
     
     public override func formatLogMessage(logMessage: DDLogMessage!) -> String {
         let dateAndTime = dateFormatter.stringFromDate(logMessage.timestamp)
-        return "\(dateAndTime) [\(logMessage.fileName):\(logMessage.line)]: \(logMessage.message)"
+        return "\(dateAndTime) \(logMessage.fileName):\(logMessage.line) \(logMessage.function) \(logMessage.message)"
     }
 }
