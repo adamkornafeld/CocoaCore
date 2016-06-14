@@ -184,6 +184,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C60685B91D0FB21E00E1238E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6E1D8271D0FA2C6007B7630 /* App.swift */,
+				C6E1D8281D0FA2C6007B7630 /* ContextCoordinator.swift */,
+				C6E1D8291D0FA2C6007B7630 /* LogFormatter.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C60685CA1D0FB22C00E1238E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C6721C021D0E1DEB001097F0 /* Managed Objects */,
+				C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */,
+				C6E1D82A1D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift */,
+				C6E1D82B1D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift */,
+				C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		C6721BA31D0DF384001097F0 = {
 			isa = PBXGroup;
 			children = (
@@ -216,14 +238,8 @@
 		C6721BB81D0DF3A2001097F0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C6721C021D0E1DEB001097F0 /* Managed Objects */,
-				C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */,
-				C6E1D8271D0FA2C6007B7630 /* App.swift */,
-				C6E1D8281D0FA2C6007B7630 /* ContextCoordinator.swift */,
-				C6E1D8291D0FA2C6007B7630 /* LogFormatter.swift */,
-				C6E1D82A1D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift */,
-				C6E1D82B1D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift */,
-				C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */,
+				C60685CA1D0FB22C00E1238E /* Data */,
+				C60685B91D0FB21E00E1238E /* Controller */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
