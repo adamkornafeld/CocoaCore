@@ -26,6 +26,9 @@
 		C6E1D8381D0FA2D4007B7630 /* NSPersistentStoreCoordinator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */; };
 		C6E1D83B1D0FA2E7007B7630 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8391D0FA2E7007B7630 /* Entity.swift */; };
 		C6E1D83C1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D83A1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift */; };
+		C6E1D8D01D0FA7D8007B7630 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8391D0FA2E7007B7630 /* Entity.swift */; };
+		C6E1D8E11D0FA7DA007B7630 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D83A1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift */; };
+		C6E1D8E21D0FA7DC007B7630 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -531,6 +534,9 @@
 			files = (
 				C6E1D8371D0FA2D2007B7630 /* NSManagedObjectModel+Helper.swift in Sources */,
 				C6E1D8341D0FA2CB007B7630 /* ContextCoordinator.swift in Sources */,
+				C6E1D8E11D0FA7DA007B7630 /* Entity+CoreDataProperties.swift in Sources */,
+				C6E1D8D01D0FA7D8007B7630 /* Entity.swift in Sources */,
+				C6E1D8E21D0FA7DC007B7630 /* Data.xcdatamodeld in Sources */,
 				C6E1D8381D0FA2D4007B7630 /* NSPersistentStoreCoordinator+Helper.swift in Sources */,
 				C6E1D8351D0FA2CE007B7630 /* LogFormatter.swift in Sources */,
 				C6E1D8331D0FA2C8007B7630 /* App.swift in Sources */,
