@@ -19,18 +19,63 @@ public class ContextCoordinator {
         }
     }
     
-    public var mainQueueContext: NSManagedObjectContext {
+    var _mainQueueContext: NSManagedObjectContext? {
+        didSet {
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(contextDidSave), name: NSManagedObjectContextDidSaveNotification, object: _mainQueueContext)
+        }
+    }
+    public var mainQueueContext: NSManagedObjectContext? {
         get {
-            let bundle = NSBundle(forClass: self.dynamicType)
-            let coordinator = NSPersistentStoreCoordinator.coordinatorForModelWithName("Data", options: self.persistentStoreCoordinatorOptions, bundle: bundle)
-            
-            let context = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
-            context.persistentStoreCoordinator = coordinator
-            return context
+            if (_mainQueueContext == nil) {
+                let bundle = NSBundle(forClass: self.dynamicType)
+                let coordinator = NSPersistentStoreCoordinator.coordinatorForModelWithName("Data", options: self.persistentStoreCoordinatorOptions, bundle: bundle)
+                
+                let context = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+                context.persistentStoreCoordinator = coordinator
+                _mainQueueContext = context
+            }
+            return _mainQueueContext
+        }
+    }
+    
+    var _backgroundQueueContext: NSManagedObjectContext? {
+        didSet {
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(contextDidSave), name: NSManagedObjectContextDidSaveNotification, object: _backgroundQueueContext)
+        }
+    }
+    public var backgroundQueueContext: NSManagedObjectContext? {
+        get {
+            if (_backgroundQueueContext == nil) {
+                let bundle = NSBundle(forClass: self.dynamicType)
+                let coordinator = NSPersistentStoreCoordinator.coordinatorForModelWithName("Data", options: self.persistentStoreCoordinatorOptions, bundle: bundle)
+                
+                let context = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
+                context.persistentStoreCoordinator = coordinator
+                _backgroundQueueContext = context
+            }
+            return _backgroundQueueContext
+        }
+    }
+    
+    @objc func contextDidSave(notification: NSNotification) {
+        if let context = notification.object as? NSManagedObjectContext {
+            if (context == self.mainQueueContext) {
+                DDLogVerbose("backgroundQueueContext mergeChangesFromContextDidSaveNotification()")
+                self.backgroundQueueContext?.mergeChangesFromContextDidSaveNotification(notification)
+            }
+            else if (context == self.backgroundQueueContext) {
+                DDLogVerbose("mainQueueContext mergeChangesFromContextDidSaveNotification")
+                self.mainQueueContext?.mergeChangesFromContextDidSaveNotification(notification)
+            }
         }
     }
     
     init() {
         DDLogVerbose("ContextCoordinator init")
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: NSManagedObjectContextDidSaveNotification, object: _mainQueueContext)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: NSManagedObjectContextDidSaveNotification, object: _backgroundQueueContext)
     }
 }
