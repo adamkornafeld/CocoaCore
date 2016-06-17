@@ -18,78 +18,11 @@
 		C633950C1D1470A700CBB862 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395091D1470A700CBB862 /* App.swift */; };
 		C633950D1D1470A700CBB862 /* ContextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950A1D1470A700CBB862 /* ContextCoordinator.swift */; };
 		C633950E1D1470A700CBB862 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950B1D1470A700CBB862 /* LogFormatter.swift */; };
-		C641BE171D10A09400981627 /* Siesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BE141D10A08400981627 /* Siesta.framework */; };
-		C641BE211D10A83A00981627 /* Siesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BE141D10A08400981627 /* Siesta.framework */; };
-		C641BE461D11A8C400981627 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BE411D11A88F00981627 /* CryptoSwift.framework */; };
-		C641BE471D11A8CB00981627 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BE3D1D11A88F00981627 /* CryptoSwift.framework */; };
 		C6E1D7691D0F9911007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D70E1D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 		C6E1D7981D0F9C11007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D7121D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C641BE0F1D10A08400981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DA336E4F1B2E6DDB006F702A;
-			remoteInfo = "Siesta iOS";
-		};
-		C641BE111D10A08400981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DA336E591B2E6DDB006F702A;
-			remoteInfo = "SiestaTests iOS";
-		};
-		C641BE131D10A08400981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9F2FB51E1C28645E0068DFFA;
-			remoteInfo = "Siesta OSX";
-		};
-		C641BE151D10A08400981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9F0FAFAC1D033FCD00CE1B61;
-			remoteInfo = "SiestaTests OSX";
-		};
-		C641BE3C1D11A88F00981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 754BE45519693E190098E6F3;
-			remoteInfo = "CryptoSwift iOS";
-		};
-		C641BE3E1D11A88F00981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5596BDBB1BC8F220007E38D5;
-			remoteInfo = "CryptoSwift watchOS";
-		};
-		C641BE401D11A88F00981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75DF77721BC8EB59006E9520;
-			remoteInfo = "CryptoSwift OSX";
-		};
-		C641BE421D11A88F00981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75D614BF1BD844F2001358B2;
-			remoteInfo = "CryptoSwift tvOS";
-		};
-		C641BE441D11A88F00981627 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 754BE46019693E190098E6F3;
-			remoteInfo = CryptoSwiftTests;
-		};
 		C6E1D70B1D0F9636007B7630 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */;
@@ -217,8 +150,6 @@
 		C63395091D1470A700CBB862 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = CocoaSkeletonCore/Classes/App.swift; sourceTree = SOURCE_ROOT; };
 		C633950A1D1470A700CBB862 /* ContextCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextCoordinator.swift; path = CocoaSkeletonCore/Classes/ContextCoordinator.swift; sourceTree = SOURCE_ROOT; };
 		C633950B1D1470A700CBB862 /* LogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogFormatter.swift; path = CocoaSkeletonCore/Classes/LogFormatter.swift; sourceTree = SOURCE_ROOT; };
-		C641BDF81D10A08400981627 /* Siesta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Siesta.xcodeproj; path = External/Siesta/Siesta.xcodeproj; sourceTree = "<group>"; };
-		C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = External/CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
 		C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = External/CocoaLumberjack/Lumberjack.xcodeproj; sourceTree = "<group>"; };
 		C6E1D7531D0F98B5007B7630 /* CocoaSkeletonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaSkeletonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E1D7601D0F98C3007B7630 /* CocoaSkeletonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaSkeletonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,8 +160,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C641BE471D11A8CB00981627 /* CryptoSwift.framework in Frameworks */,
-				C641BE171D10A09400981627 /* Siesta.framework in Frameworks */,
 				C6E1D7981D0F9C11007B7630 /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,8 +168,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C641BE461D11A8C400981627 /* CryptoSwift.framework in Frameworks */,
-				C641BE211D10A83A00981627 /* Siesta.framework in Frameworks */,
 				C6E1D7691D0F9911007B7630 /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,34 +206,9 @@
 			name = "Managed Objects";
 			sourceTree = "<group>";
 		};
-		C641BDF91D10A08400981627 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C641BE101D10A08400981627 /* Siesta.framework */,
-				C641BE121D10A08400981627 /* SiestaTests.xctest */,
-				C641BE141D10A08400981627 /* Siesta.framework */,
-				C641BE161D10A08400981627 /* SiestaTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C641BE351D11A88F00981627 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C641BE3D1D11A88F00981627 /* CryptoSwift.framework */,
-				C641BE3F1D11A88F00981627 /* CryptoSwift.framework */,
-				C641BE411D11A88F00981627 /* CryptoSwift.framework */,
-				C641BE431D11A88F00981627 /* CryptoSwift.framework */,
-				C641BE451D11A88F00981627 /* CryptoSwiftTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C6721BA31D0DF384001097F0 = {
 			isa = PBXGroup;
 			children = (
-				C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */,
-				C641BDF81D10A08400981627 /* Siesta.xcodeproj */,
 				C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */,
 				C6721BAF1D0DF384001097F0 /* CocoaCore */,
 				C6E1D7541D0F98B5007B7630 /* CocoaSkeletonCore-iOS */,
@@ -464,16 +366,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C641BE351D11A88F00981627 /* Products */;
-					ProjectRef = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
-				},
-				{
 					ProductGroup = C6E1D6F91D0F9636007B7630 /* Products */;
 					ProjectRef = C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */;
-				},
-				{
-					ProductGroup = C641BDF91D10A08400981627 /* Products */;
-					ProjectRef = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -485,69 +379,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C641BE101D10A08400981627 /* Siesta.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Siesta.framework;
-			remoteRef = C641BE0F1D10A08400981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BE121D10A08400981627 /* SiestaTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SiestaTests.xctest;
-			remoteRef = C641BE111D10A08400981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BE141D10A08400981627 /* Siesta.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Siesta.framework;
-			remoteRef = C641BE131D10A08400981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BE161D10A08400981627 /* SiestaTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SiestaTests.xctest;
-			remoteRef = C641BE151D10A08400981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BE3D1D11A88F00981627 /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = C641BE3C1D11A88F00981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BE3F1D11A88F00981627 /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = C641BE3E1D11A88F00981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BE411D11A88F00981627 /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = C641BE401D11A88F00981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BE431D11A88F00981627 /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = C641BE421D11A88F00981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C641BE451D11A88F00981627 /* CryptoSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CryptoSwiftTests.xctest;
-			remoteRef = C641BE441D11A88F00981627 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		C6E1D70C1D0F9636007B7630 /* CocoaLumberjack.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
