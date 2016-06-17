@@ -7,31 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C63394F81D14703E00CBB862 /* CocoaSkeletonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C63394F41D14702C00CBB862 /* CocoaSkeletonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C63394FB1D14704D00CBB862 /* CocoaSkeletonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C63394F91D14704D00CBB862 /* CocoaSkeletonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C63394FF1D14708100CBB862 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FD1D14708100CBB862 /* Entity.swift */; };
+		C63395001D14708100CBB862 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FE1D14708100CBB862 /* Entity+CoreDataProperties.swift */; };
+		C63395021D14708B00CBB862 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C63395011D14708B00CBB862 /* Data.xcdatamodeld */; };
+		C63395061D14709300CBB862 /* NSManagedObjectContext+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395031D14709300CBB862 /* NSManagedObjectContext+Helper.swift */; };
+		C63395071D14709300CBB862 /* NSManagedObjectModel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395041D14709300CBB862 /* NSManagedObjectModel+Helper.swift */; };
+		C63395081D14709300CBB862 /* NSPersistentStoreCoordinator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395051D14709300CBB862 /* NSPersistentStoreCoordinator+Helper.swift */; };
+		C633950C1D1470A700CBB862 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395091D1470A700CBB862 /* App.swift */; };
+		C633950D1D1470A700CBB862 /* ContextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950A1D1470A700CBB862 /* ContextCoordinator.swift */; };
+		C633950E1D1470A700CBB862 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950B1D1470A700CBB862 /* LogFormatter.swift */; };
+		C641BE171D10A09400981627 /* Siesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BE141D10A08400981627 /* Siesta.framework */; };
+		C641BE211D10A83A00981627 /* Siesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BE141D10A08400981627 /* Siesta.framework */; };
+		C641BE461D11A8C400981627 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BE411D11A88F00981627 /* CryptoSwift.framework */; };
+		C641BE471D11A8CB00981627 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C641BE3D1D11A88F00981627 /* CryptoSwift.framework */; };
 		C6E1D7691D0F9911007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D70E1D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 		C6E1D7981D0F9C11007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D7121D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
-		C6E1D7BF1D0F9E7B007B7630 /* CocoaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E1D7BE1D0F9E7B007B7630 /* CocoaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6E1D7C21D0F9EB2007B7630 /* CocoaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E1D7C01D0F9EA5007B7630 /* CocoaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6E1D8131D0FA1FC007B7630 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */; };
-		C6E1D82D1D0FA2C6007B7630 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8271D0FA2C6007B7630 /* App.swift */; };
-		C6E1D82E1D0FA2C6007B7630 /* ContextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8281D0FA2C6007B7630 /* ContextCoordinator.swift */; };
-		C6E1D82F1D0FA2C6007B7630 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8291D0FA2C6007B7630 /* LogFormatter.swift */; };
-		C6E1D8301D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D82A1D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift */; };
-		C6E1D8311D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D82B1D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift */; };
-		C6E1D8321D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */; };
-		C6E1D8331D0FA2C8007B7630 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8271D0FA2C6007B7630 /* App.swift */; };
-		C6E1D8341D0FA2CB007B7630 /* ContextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8281D0FA2C6007B7630 /* ContextCoordinator.swift */; };
-		C6E1D8351D0FA2CE007B7630 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8291D0FA2C6007B7630 /* LogFormatter.swift */; };
-		C6E1D8361D0FA2D0007B7630 /* NSManagedObjectContext+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D82A1D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift */; };
-		C6E1D8371D0FA2D2007B7630 /* NSManagedObjectModel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D82B1D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift */; };
-		C6E1D8381D0FA2D4007B7630 /* NSPersistentStoreCoordinator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */; };
-		C6E1D83B1D0FA2E7007B7630 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8391D0FA2E7007B7630 /* Entity.swift */; };
-		C6E1D83C1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D83A1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift */; };
-		C6E1D8D01D0FA7D8007B7630 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8391D0FA2E7007B7630 /* Entity.swift */; };
-		C6E1D8E11D0FA7DA007B7630 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D83A1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift */; };
-		C6E1D8E21D0FA7DC007B7630 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C641BE0F1D10A08400981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA336E4F1B2E6DDB006F702A;
+			remoteInfo = "Siesta iOS";
+		};
+		C641BE111D10A08400981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA336E591B2E6DDB006F702A;
+			remoteInfo = "SiestaTests iOS";
+		};
+		C641BE131D10A08400981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F2FB51E1C28645E0068DFFA;
+			remoteInfo = "Siesta OSX";
+		};
+		C641BE151D10A08400981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F0FAFAC1D033FCD00CE1B61;
+			remoteInfo = "SiestaTests OSX";
+		};
+		C641BE3C1D11A88F00981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = "CryptoSwift iOS";
+		};
+		C641BE3E1D11A88F00981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5596BDBB1BC8F220007E38D5;
+			remoteInfo = "CryptoSwift watchOS";
+		};
+		C641BE401D11A88F00981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75DF77721BC8EB59006E9520;
+			remoteInfo = "CryptoSwift OSX";
+		};
+		C641BE421D11A88F00981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75D614BF1BD844F2001358B2;
+			remoteInfo = "CryptoSwift tvOS";
+		};
+		C641BE441D11A88F00981627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = CryptoSwiftTests;
+		};
 		C6E1D70B1D0F9636007B7630 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */;
@@ -147,21 +205,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C63394F41D14702C00CBB862 /* CocoaSkeletonCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocoaSkeletonCore.h; path = CocoaSkeletonCore/macOS/CocoaSkeletonCore.h; sourceTree = SOURCE_ROOT; };
+		C63394F51D14702C00CBB862 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CocoaSkeletonCore/macOS/Info.plist; sourceTree = SOURCE_ROOT; };
+		C63394F91D14704D00CBB862 /* CocoaSkeletonCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocoaSkeletonCore.h; path = CocoaSkeletonCore/iOS/CocoaSkeletonCore.h; sourceTree = SOURCE_ROOT; };
+		C63394FA1D14704D00CBB862 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CocoaSkeletonCore/iOS/Info.plist; sourceTree = SOURCE_ROOT; };
+		C63394FD1D14708100CBB862 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = CocoaSkeletonCore/Classes/Entity.swift; sourceTree = SOURCE_ROOT; };
+		C63394FE1D14708100CBB862 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataProperties.swift"; path = "CocoaSkeletonCore/Classes/Entity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C63395031D14709300CBB862 /* NSManagedObjectContext+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Helper.swift"; path = "CocoaSkeletonCore/Classes/NSManagedObjectContext+Helper.swift"; sourceTree = SOURCE_ROOT; };
+		C63395041D14709300CBB862 /* NSManagedObjectModel+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectModel+Helper.swift"; path = "CocoaSkeletonCore/Classes/NSManagedObjectModel+Helper.swift"; sourceTree = SOURCE_ROOT; };
+		C63395051D14709300CBB862 /* NSPersistentStoreCoordinator+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSPersistentStoreCoordinator+Helper.swift"; path = "CocoaSkeletonCore/Classes/NSPersistentStoreCoordinator+Helper.swift"; sourceTree = SOURCE_ROOT; };
+		C63395091D1470A700CBB862 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = CocoaSkeletonCore/Classes/App.swift; sourceTree = SOURCE_ROOT; };
+		C633950A1D1470A700CBB862 /* ContextCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextCoordinator.swift; path = CocoaSkeletonCore/Classes/ContextCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		C633950B1D1470A700CBB862 /* LogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogFormatter.swift; path = CocoaSkeletonCore/Classes/LogFormatter.swift; sourceTree = SOURCE_ROOT; };
+		C641BDF81D10A08400981627 /* Siesta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Siesta.xcodeproj; path = External/Siesta/Siesta.xcodeproj; sourceTree = "<group>"; };
+		C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = External/CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
 		C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = External/CocoaLumberjack/Lumberjack.xcodeproj; sourceTree = "<group>"; };
-		C6E1D7531D0F98B5007B7630 /* CocoaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6E1D7571D0F98B5007B7630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CocoaCore/iOS/Info.plist; sourceTree = "<group>"; };
-		C6E1D7601D0F98C3007B7630 /* CocoaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6E1D7641D0F98C3007B7630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CocoaCore/macOS/Info.plist; sourceTree = "<group>"; };
-		C6E1D7BE1D0F9E7B007B7630 /* CocoaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocoaCore.h; path = CocoaCore/iOS/CocoaCore.h; sourceTree = SOURCE_ROOT; };
-		C6E1D7C01D0F9EA5007B7630 /* CocoaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocoaCore.h; path = CocoaCore/macOS/CocoaCore.h; sourceTree = SOURCE_ROOT; };
-		C6E1D8271D0FA2C6007B7630 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = CocoaCore/Classes/App.swift; sourceTree = SOURCE_ROOT; };
-		C6E1D8281D0FA2C6007B7630 /* ContextCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextCoordinator.swift; path = CocoaCore/Classes/ContextCoordinator.swift; sourceTree = SOURCE_ROOT; };
-		C6E1D8291D0FA2C6007B7630 /* LogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogFormatter.swift; path = CocoaCore/Classes/LogFormatter.swift; sourceTree = SOURCE_ROOT; };
-		C6E1D82A1D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Helper.swift"; path = "CocoaCore/Classes/NSManagedObjectContext+Helper.swift"; sourceTree = SOURCE_ROOT; };
-		C6E1D82B1D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectModel+Helper.swift"; path = "CocoaCore/Classes/NSManagedObjectModel+Helper.swift"; sourceTree = SOURCE_ROOT; };
-		C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSPersistentStoreCoordinator+Helper.swift"; path = "CocoaCore/Classes/NSPersistentStoreCoordinator+Helper.swift"; sourceTree = SOURCE_ROOT; };
-		C6E1D8391D0FA2E7007B7630 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = CocoaCore/Classes/Entity.swift; sourceTree = SOURCE_ROOT; };
-		C6E1D83A1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataProperties.swift"; path = "CocoaCore/Classes/Entity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C6E1D7531D0F98B5007B7630 /* CocoaSkeletonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaSkeletonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E1D7601D0F98C3007B7630 /* CocoaSkeletonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaSkeletonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +229,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C641BE471D11A8CB00981627 /* CryptoSwift.framework in Frameworks */,
+				C641BE171D10A09400981627 /* Siesta.framework in Frameworks */,
 				C6E1D7981D0F9C11007B7630 /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +239,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C641BE461D11A8C400981627 /* CryptoSwift.framework in Frameworks */,
+				C641BE211D10A83A00981627 /* Siesta.framework in Frameworks */,
 				C6E1D7691D0F9911007B7630 /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,9 +251,9 @@
 		C60685B91D0FB21E00E1238E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C6E1D8271D0FA2C6007B7630 /* App.swift */,
-				C6E1D8281D0FA2C6007B7630 /* ContextCoordinator.swift */,
-				C6E1D8291D0FA2C6007B7630 /* LogFormatter.swift */,
+				C63395091D1470A700CBB862 /* App.swift */,
+				C633950A1D1470A700CBB862 /* ContextCoordinator.swift */,
+				C633950B1D1470A700CBB862 /* LogFormatter.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -198,10 +262,9 @@
 			isa = PBXGroup;
 			children = (
 				C641BDED1D10922300981627 /* Managed Objects */,
-				C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */,
-				C6E1D82A1D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift */,
-				C6E1D82B1D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift */,
-				C6E1D82C1D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift */,
+				C63395031D14709300CBB862 /* NSManagedObjectContext+Helper.swift */,
+				C63395041D14709300CBB862 /* NSManagedObjectModel+Helper.swift */,
+				C63395051D14709300CBB862 /* NSPersistentStoreCoordinator+Helper.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -209,19 +272,45 @@
 		C641BDED1D10922300981627 /* Managed Objects */ = {
 			isa = PBXGroup;
 			children = (
-				C6E1D8391D0FA2E7007B7630 /* Entity.swift */,
-				C6E1D83A1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift */,
+				C63395011D14708B00CBB862 /* Data.xcdatamodeld */,
+				C63394FD1D14708100CBB862 /* Entity.swift */,
+				C63394FE1D14708100CBB862 /* Entity+CoreDataProperties.swift */,
 			);
 			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		C641BDF91D10A08400981627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C641BE101D10A08400981627 /* Siesta.framework */,
+				C641BE121D10A08400981627 /* SiestaTests.xctest */,
+				C641BE141D10A08400981627 /* Siesta.framework */,
+				C641BE161D10A08400981627 /* SiestaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C641BE351D11A88F00981627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C641BE3D1D11A88F00981627 /* CryptoSwift.framework */,
+				C641BE3F1D11A88F00981627 /* CryptoSwift.framework */,
+				C641BE411D11A88F00981627 /* CryptoSwift.framework */,
+				C641BE431D11A88F00981627 /* CryptoSwift.framework */,
+				C641BE451D11A88F00981627 /* CryptoSwiftTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C6721BA31D0DF384001097F0 = {
 			isa = PBXGroup;
 			children = (
+				C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */,
+				C641BDF81D10A08400981627 /* Siesta.xcodeproj */,
 				C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */,
 				C6721BAF1D0DF384001097F0 /* CocoaCore */,
-				C6E1D7541D0F98B5007B7630 /* CocoaCore-iOS */,
-				C6E1D7611D0F98C3007B7630 /* CocoaCore-macOS */,
+				C6E1D7541D0F98B5007B7630 /* CocoaSkeletonCore-iOS */,
+				C6E1D7611D0F98C3007B7630 /* CocoaSkeletonCore-macOS */,
 				C6721BAE1D0DF384001097F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -229,8 +318,8 @@
 		C6721BAE1D0DF384001097F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6E1D7531D0F98B5007B7630 /* CocoaCore.framework */,
-				C6E1D7601D0F98C3007B7630 /* CocoaCore.framework */,
+				C6E1D7531D0F98B5007B7630 /* CocoaSkeletonCore.framework */,
+				C6E1D7601D0F98C3007B7630 /* CocoaSkeletonCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,23 +357,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C6E1D7541D0F98B5007B7630 /* CocoaCore-iOS */ = {
+		C6E1D7541D0F98B5007B7630 /* CocoaSkeletonCore-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C6E1D7BE1D0F9E7B007B7630 /* CocoaCore.h */,
-				C6E1D7571D0F98B5007B7630 /* Info.plist */,
+				C63394F91D14704D00CBB862 /* CocoaSkeletonCore.h */,
+				C63394FA1D14704D00CBB862 /* Info.plist */,
 			);
-			name = "CocoaCore-iOS";
+			name = "CocoaSkeletonCore-iOS";
 			path = "SkeletonCore-iOS";
 			sourceTree = "<group>";
 		};
-		C6E1D7611D0F98C3007B7630 /* CocoaCore-macOS */ = {
+		C6E1D7611D0F98C3007B7630 /* CocoaSkeletonCore-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				C6E1D7C01D0F9EA5007B7630 /* CocoaCore.h */,
-				C6E1D7641D0F98C3007B7630 /* Info.plist */,
+				C63394F41D14702C00CBB862 /* CocoaSkeletonCore.h */,
+				C63394F51D14702C00CBB862 /* Info.plist */,
 			);
-			name = "CocoaCore-macOS";
+			name = "CocoaSkeletonCore-macOS";
 			path = "SkeletonCore-macOS";
 			sourceTree = "<group>";
 		};
@@ -295,7 +384,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E1D7BF1D0F9E7B007B7630 /* CocoaCore.h in Headers */,
+				C63394FB1D14704D00CBB862 /* CocoaSkeletonCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,16 +392,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E1D7C21D0F9EB2007B7630 /* CocoaCore.h in Headers */,
+				C63394F81D14703E00CBB862 /* CocoaSkeletonCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C6E1D7521D0F98B5007B7630 /* CocoaCore-iOS */ = {
+		C6E1D7521D0F98B5007B7630 /* CocoaSkeletonCore-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6E1D7581D0F98B5007B7630 /* Build configuration list for PBXNativeTarget "CocoaCore-iOS" */;
+			buildConfigurationList = C6E1D7581D0F98B5007B7630 /* Build configuration list for PBXNativeTarget "CocoaSkeletonCore-iOS" */;
 			buildPhases = (
 				C6E1D74E1D0F98B5007B7630 /* Sources */,
 				C6E1D74F1D0F98B5007B7630 /* Frameworks */,
@@ -323,14 +412,14 @@
 			);
 			dependencies = (
 			);
-			name = "CocoaCore-iOS";
+			name = "CocoaSkeletonCore-iOS";
 			productName = "SkeletonCore-iOS";
-			productReference = C6E1D7531D0F98B5007B7630 /* CocoaCore.framework */;
+			productReference = C6E1D7531D0F98B5007B7630 /* CocoaSkeletonCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C6E1D75F1D0F98C3007B7630 /* CocoaCore-macOS */ = {
+		C6E1D75F1D0F98C3007B7630 /* CocoaSkeletonCore-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6E1D7651D0F98C3007B7630 /* Build configuration list for PBXNativeTarget "CocoaCore-macOS" */;
+			buildConfigurationList = C6E1D7651D0F98C3007B7630 /* Build configuration list for PBXNativeTarget "CocoaSkeletonCore-macOS" */;
 			buildPhases = (
 				C6E1D75B1D0F98C3007B7630 /* Sources */,
 				C6E1D75C1D0F98C3007B7630 /* Frameworks */,
@@ -341,9 +430,9 @@
 			);
 			dependencies = (
 			);
-			name = "CocoaCore-macOS";
+			name = "CocoaSkeletonCore-macOS";
 			productName = "SkeletonCore-macOS";
-			productReference = C6E1D7601D0F98C3007B7630 /* CocoaCore.framework */;
+			productReference = C6E1D7601D0F98C3007B7630 /* CocoaSkeletonCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -363,7 +452,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C6721BA71D0DF384001097F0 /* Build configuration list for PBXProject "CocoaCore" */;
+			buildConfigurationList = C6721BA71D0DF384001097F0 /* Build configuration list for PBXProject "CocoaSkeletonCore" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -375,19 +464,90 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = C641BE351D11A88F00981627 /* Products */;
+					ProjectRef = C641BE341D11A88F00981627 /* CryptoSwift.xcodeproj */;
+				},
+				{
 					ProductGroup = C6E1D6F91D0F9636007B7630 /* Products */;
 					ProjectRef = C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */;
+				},
+				{
+					ProductGroup = C641BDF91D10A08400981627 /* Products */;
+					ProjectRef = C641BDF81D10A08400981627 /* Siesta.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				C6E1D7521D0F98B5007B7630 /* CocoaCore-iOS */,
-				C6E1D75F1D0F98C3007B7630 /* CocoaCore-macOS */,
+				C6E1D7521D0F98B5007B7630 /* CocoaSkeletonCore-iOS */,
+				C6E1D75F1D0F98C3007B7630 /* CocoaSkeletonCore-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		C641BE101D10A08400981627 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = C641BE0F1D10A08400981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C641BE121D10A08400981627 /* SiestaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SiestaTests.xctest;
+			remoteRef = C641BE111D10A08400981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C641BE141D10A08400981627 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = C641BE131D10A08400981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C641BE161D10A08400981627 /* SiestaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SiestaTests.xctest;
+			remoteRef = C641BE151D10A08400981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C641BE3D1D11A88F00981627 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = C641BE3C1D11A88F00981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C641BE3F1D11A88F00981627 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = C641BE3E1D11A88F00981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C641BE411D11A88F00981627 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = C641BE401D11A88F00981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C641BE431D11A88F00981627 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = C641BE421D11A88F00981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C641BE451D11A88F00981627 /* CryptoSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CryptoSwiftTests.xctest;
+			remoteRef = C641BE441D11A88F00981627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C6E1D70C1D0F9636007B7630 /* CocoaLumberjack.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -524,15 +684,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E1D82D1D0FA2C6007B7630 /* App.swift in Sources */,
-				C6E1D8301D0FA2C6007B7630 /* NSManagedObjectContext+Helper.swift in Sources */,
-				C6E1D8131D0FA1FC007B7630 /* Data.xcdatamodeld in Sources */,
-				C6E1D83C1D0FA2E7007B7630 /* Entity+CoreDataProperties.swift in Sources */,
-				C6E1D8321D0FA2C6007B7630 /* NSPersistentStoreCoordinator+Helper.swift in Sources */,
-				C6E1D83B1D0FA2E7007B7630 /* Entity.swift in Sources */,
-				C6E1D82E1D0FA2C6007B7630 /* ContextCoordinator.swift in Sources */,
-				C6E1D82F1D0FA2C6007B7630 /* LogFormatter.swift in Sources */,
-				C6E1D8311D0FA2C6007B7630 /* NSManagedObjectModel+Helper.swift in Sources */,
+				C63395061D14709300CBB862 /* NSManagedObjectContext+Helper.swift in Sources */,
+				C63395001D14708100CBB862 /* Entity+CoreDataProperties.swift in Sources */,
+				C633950C1D1470A700CBB862 /* App.swift in Sources */,
+				C63395021D14708B00CBB862 /* Data.xcdatamodeld in Sources */,
+				C63394FF1D14708100CBB862 /* Entity.swift in Sources */,
+				C63395071D14709300CBB862 /* NSManagedObjectModel+Helper.swift in Sources */,
+				C633950D1D1470A700CBB862 /* ContextCoordinator.swift in Sources */,
+				C63395081D14709300CBB862 /* NSPersistentStoreCoordinator+Helper.swift in Sources */,
+				C633950E1D1470A700CBB862 /* LogFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,15 +700,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E1D8371D0FA2D2007B7630 /* NSManagedObjectModel+Helper.swift in Sources */,
-				C6E1D8341D0FA2CB007B7630 /* ContextCoordinator.swift in Sources */,
-				C6E1D8E11D0FA7DA007B7630 /* Entity+CoreDataProperties.swift in Sources */,
-				C6E1D8D01D0FA7D8007B7630 /* Entity.swift in Sources */,
-				C6E1D8E21D0FA7DC007B7630 /* Data.xcdatamodeld in Sources */,
-				C6E1D8381D0FA2D4007B7630 /* NSPersistentStoreCoordinator+Helper.swift in Sources */,
-				C6E1D8351D0FA2CE007B7630 /* LogFormatter.swift in Sources */,
-				C6E1D8331D0FA2C8007B7630 /* App.swift in Sources */,
-				C6E1D8361D0FA2D0007B7630 /* NSManagedObjectContext+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,11 +804,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CocoaCore/iOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CocoaSkeletonCore/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaCore;
-				PRODUCT_NAME = CocoaCore;
+				PRODUCT_NAME = CocoaSkeletonCore;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -669,11 +820,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CocoaCore/iOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CocoaSkeletonCore/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaCore;
-				PRODUCT_NAME = CocoaCore;
+				PRODUCT_NAME = CocoaSkeletonCore;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -688,12 +839,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CocoaCore/macOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CocoaSkeletonCore/macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaCore;
-				PRODUCT_NAME = CocoaCore;
+				PRODUCT_NAME = CocoaSkeletonCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -709,12 +860,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CocoaCore/macOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CocoaSkeletonCore/macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaCore;
-				PRODUCT_NAME = CocoaCore;
+				PRODUCT_NAME = CocoaSkeletonCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -723,7 +874,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C6721BA71D0DF384001097F0 /* Build configuration list for PBXProject "CocoaCore" */ = {
+		C6721BA71D0DF384001097F0 /* Build configuration list for PBXProject "CocoaSkeletonCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6721BB31D0DF384001097F0 /* Debug */,
@@ -732,7 +883,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6E1D7581D0F98B5007B7630 /* Build configuration list for PBXNativeTarget "CocoaCore-iOS" */ = {
+		C6E1D7581D0F98B5007B7630 /* Build configuration list for PBXNativeTarget "CocoaSkeletonCore-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6E1D7591D0F98B5007B7630 /* Debug */,
@@ -741,7 +892,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6E1D7651D0F98C3007B7630 /* Build configuration list for PBXNativeTarget "CocoaCore-macOS" */ = {
+		C6E1D7651D0F98C3007B7630 /* Build configuration list for PBXNativeTarget "CocoaSkeletonCore-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6E1D7661D0F98C3007B7630 /* Debug */,
@@ -753,12 +904,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C6E1D8121D0FA1FC007B7630 /* Data.xcdatamodeld */ = {
+		C63395011D14708B00CBB862 /* Data.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 			);
 			name = Data.xcdatamodeld;
-			path = ../CocoaCore/Data.xcdatamodeld;
+			path = ../CocoaSkeletonCore/Data.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -58,7 +58,7 @@ public class ContextCoordinator : NSObject {
         }
     }
     
-    @objc func contextDidSave(notification: NSNotification) {
+    func contextDidSave(notification: NSNotification) {
         if let context = notification.object as? NSManagedObjectContext {
             if (context == self.mainQueueContext) {
                 DDLogVerbose("backgroundQueueContext mergeChangesFromContextDidSaveNotification()")

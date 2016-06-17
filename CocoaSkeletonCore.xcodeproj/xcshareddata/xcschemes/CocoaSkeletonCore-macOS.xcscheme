@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6E1D7521D0F98B5007B7630"
-               BuildableName = "CocoaCore.framework"
-               BlueprintName = "CocoaCore-iOS"
-               ReferencedContainer = "container:CocoaCore.xcodeproj">
+               BlueprintIdentifier = "C6E1D75F1D0F98C3007B7630"
+               BuildableName = "CocoaSkeletonCore.framework"
+               BlueprintName = "CocoaSkeletonCore-macOS"
+               ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6E1D7521D0F98B5007B7630"
-            BuildableName = "CocoaCore.framework"
-            BlueprintName = "CocoaCore-iOS"
-            ReferencedContainer = "container:CocoaCore.xcodeproj">
+            BlueprintIdentifier = "C6E1D75F1D0F98C3007B7630"
+            BuildableName = "CocoaSkeletonCore.framework"
+            BlueprintName = "CocoaSkeletonCore-macOS"
+            ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6E1D7521D0F98B5007B7630"
-            BuildableName = "CocoaCore.framework"
-            BlueprintName = "CocoaCore-iOS"
-            ReferencedContainer = "container:CocoaCore.xcodeproj">
+            BlueprintIdentifier = "C6E1D75F1D0F98C3007B7630"
+            BuildableName = "CocoaSkeletonCore.framework"
+            BlueprintName = "CocoaSkeletonCore-macOS"
+            ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

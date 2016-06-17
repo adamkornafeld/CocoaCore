@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5AA22BB3026A38F456C2316F1B9669CDF62ABB4E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD" : 0,
+    "5AA22BB3026A38F456C2316F1B9669CDF62ABB4E" : 0,
+    "35B5C9A93714EC9BEB56BAE809C5551E5C66E52D" : 0,
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : 0,
+    "7934AB296FE3F4F8278182125D52C1E5E495BF80" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "70220E61-DE1B-496F-9578-5F7D54828959",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD" : "CocoaCore\/External\/Siesta\/",
+    "5AA22BB3026A38F456C2316F1B9669CDF62ABB4E" : "CocoaCore\/",
+    "35B5C9A93714EC9BEB56BAE809C5551E5C66E52D" : "CocoaCore\/External\/CocoaLumberjack\/",
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : "CocoaCore\/External\/CryptoSwift\/",
+    "7934AB296FE3F4F8278182125D52C1E5E495BF80" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CocoaSkeletonCore",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CocoaSkeletonCore.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:CocoaLumberjack\/CocoaLumberjack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "35B5C9A93714EC9BEB56BAE809C5551E5C66E52D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:adamkornafeld\/CocoaCore.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5AA22BB3026A38F456C2316F1B9669CDF62ABB4E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:adamkornafeld\/CocoaSkeleton.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7934AB296FE3F4F8278182125D52C1E5E495BF80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bustoutsolutions\/siesta.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:krzyzanowskim\/CryptoSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53"
+    }
+  ]
+}
