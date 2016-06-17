@@ -17,6 +17,9 @@ public class App : NSObject {
     public let contextCoordinator = ContextCoordinator()
     
     public override init() {
+        DDTTYLogger.sharedInstance().logFormatter = LogFormatter()
+        DDLog.addLogger(DDTTYLogger.sharedInstance(), withLevel: .Verbose)
+        
         DDLogVerbose("App init")
     }
     
