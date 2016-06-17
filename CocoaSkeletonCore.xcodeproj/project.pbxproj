@@ -27,6 +27,17 @@
 		C63395681D147B9C00CBB862 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FD1D14708100CBB862 /* Entity.swift */; };
 		C63395691D147B9C00CBB862 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FE1D14708100CBB862 /* Entity+CoreDataProperties.swift */; };
 		C633956A1D147B9E00CBB862 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C63395011D14708B00CBB862 /* Data.xcdatamodeld */; };
+		C633959F1D147D0E00CBB862 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FD1D14708100CBB862 /* Entity.swift */; };
+		C63395A01D147D0E00CBB862 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FE1D14708100CBB862 /* Entity+CoreDataProperties.swift */; };
+		C63395A11D147D0E00CBB862 /* NSManagedObjectContext+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395031D14709300CBB862 /* NSManagedObjectContext+Helper.swift */; };
+		C63395A21D147D0E00CBB862 /* NSManagedObjectModel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395041D14709300CBB862 /* NSManagedObjectModel+Helper.swift */; };
+		C63395A31D147D0E00CBB862 /* NSPersistentStoreCoordinator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395051D14709300CBB862 /* NSPersistentStoreCoordinator+Helper.swift */; };
+		C63395A41D147D0E00CBB862 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395091D1470A700CBB862 /* App.swift */; };
+		C63395A51D147D0E00CBB862 /* ContextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950A1D1470A700CBB862 /* ContextCoordinator.swift */; };
+		C63395A61D147D0E00CBB862 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950B1D1470A700CBB862 /* LogFormatter.swift */; };
+		C63395A71D147D1000CBB862 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C63395011D14708B00CBB862 /* Data.xcdatamodeld */; };
+		C63395A81D147D3E00CBB862 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D7181D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
+		C63395AB1D147DA700CBB862 /* CocoaSkeletonCore-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C63395A91D147DA700CBB862 /* CocoaSkeletonCore-watchOS.h */; };
 		C6E1D7691D0F9911007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D70E1D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 		C6E1D7981D0F9C11007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D7121D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 /* End PBXBuildFile section */
@@ -159,12 +170,23 @@
 		C63395091D1470A700CBB862 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = CocoaSkeletonCore/Classes/App.swift; sourceTree = SOURCE_ROOT; };
 		C633950A1D1470A700CBB862 /* ContextCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextCoordinator.swift; path = CocoaSkeletonCore/Classes/ContextCoordinator.swift; sourceTree = SOURCE_ROOT; };
 		C633950B1D1470A700CBB862 /* LogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogFormatter.swift; path = CocoaSkeletonCore/Classes/LogFormatter.swift; sourceTree = SOURCE_ROOT; };
+		C63395871D147CFB00CBB862 /* CocoaSkeletonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaSkeletonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63395A91D147DA700CBB862 /* CocoaSkeletonCore-watchOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CocoaSkeletonCore-watchOS.h"; path = "CocoaSkeletonCore/watchOS/CocoaSkeletonCore-watchOS.h"; sourceTree = SOURCE_ROOT; };
+		C63395AA1D147DA700CBB862 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CocoaSkeletonCore/watchOS/Info.plist; sourceTree = SOURCE_ROOT; };
 		C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = External/CocoaLumberjack/Lumberjack.xcodeproj; sourceTree = "<group>"; };
 		C6E1D7531D0F98B5007B7630 /* CocoaSkeletonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaSkeletonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E1D7601D0F98C3007B7630 /* CocoaSkeletonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaSkeletonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C63395831D147CFB00CBB862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63395A81D147D3E00CBB862 /* CocoaLumberjackSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C6E1D74F1D0F98B5007B7630 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +227,15 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		C63395881D147CFB00CBB862 /* CocoaSkeletonCore-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				C63395A91D147DA700CBB862 /* CocoaSkeletonCore-watchOS.h */,
+				C63395AA1D147DA700CBB862 /* Info.plist */,
+			);
+			path = "CocoaSkeletonCore-watchOS";
+			sourceTree = "<group>";
+		};
 		C641BDED1D10922300981627 /* Managed Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +253,7 @@
 				C6721BAF1D0DF384001097F0 /* CocoaSkeletonCore */,
 				C6E1D7541D0F98B5007B7630 /* CocoaSkeletonCore-iOS */,
 				C6E1D7611D0F98C3007B7630 /* CocoaSkeletonCore-macOS */,
+				C63395881D147CFB00CBB862 /* CocoaSkeletonCore-watchOS */,
 				C6721BAE1D0DF384001097F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -231,6 +263,7 @@
 			children = (
 				C6E1D7531D0F98B5007B7630 /* CocoaSkeletonCore.framework */,
 				C6E1D7601D0F98C3007B7630 /* CocoaSkeletonCore.framework */,
+				C63395871D147CFB00CBB862 /* CocoaSkeletonCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -291,6 +324,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		C63395841D147CFB00CBB862 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63395AB1D147DA700CBB862 /* CocoaSkeletonCore-watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C6E1D7501D0F98B5007B7630 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +351,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C63395861D147CFB00CBB862 /* CocoaSkeletonCore-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C633959E1D147CFB00CBB862 /* Build configuration list for PBXNativeTarget "CocoaSkeletonCore-watchOS" */;
+			buildPhases = (
+				C63395821D147CFB00CBB862 /* Sources */,
+				C63395831D147CFB00CBB862 /* Frameworks */,
+				C63395841D147CFB00CBB862 /* Headers */,
+				C63395851D147CFB00CBB862 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaSkeletonCore-watchOS";
+			productName = "CocoaSkeletonCore-watchOS";
+			productReference = C63395871D147CFB00CBB862 /* CocoaSkeletonCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		C6E1D7521D0F98B5007B7630 /* CocoaSkeletonCore-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6E1D7581D0F98B5007B7630 /* Build configuration list for PBXNativeTarget "CocoaSkeletonCore-iOS" */;
@@ -355,6 +414,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Adam Kornafeld";
 				TargetAttributes = {
+					C63395861D147CFB00CBB862 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					C6E1D7521D0F98B5007B7630 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -383,6 +445,7 @@
 			targets = (
 				C6E1D7521D0F98B5007B7630 /* CocoaSkeletonCore-iOS */,
 				C6E1D75F1D0F98C3007B7630 /* CocoaSkeletonCore-macOS */,
+				C63395861D147CFB00CBB862 /* CocoaSkeletonCore-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -503,6 +566,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C63395851D147CFB00CBB862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C6E1D7511D0F98B5007B7630 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +590,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C63395821D147CFB00CBB862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63395A51D147D0E00CBB862 /* ContextCoordinator.swift in Sources */,
+				C63395A01D147D0E00CBB862 /* Entity+CoreDataProperties.swift in Sources */,
+				C633959F1D147D0E00CBB862 /* Entity.swift in Sources */,
+				C63395A61D147D0E00CBB862 /* LogFormatter.swift in Sources */,
+				C63395A71D147D1000CBB862 /* Data.xcdatamodeld in Sources */,
+				C63395A11D147D0E00CBB862 /* NSManagedObjectContext+Helper.swift in Sources */,
+				C63395A41D147D0E00CBB862 /* App.swift in Sources */,
+				C63395A31D147D0E00CBB862 /* NSPersistentStoreCoordinator+Helper.swift in Sources */,
+				C63395A21D147D0E00CBB862 /* NSManagedObjectModel+Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C6E1D74E1D0F98B5007B7630 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -555,6 +641,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		C633958C1D147CFB00CBB862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CocoaSkeletonCore/watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kornafeld.CocoaSkeletonCore-watchOS";
+				PRODUCT_NAME = CocoaSkeletonCore;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		C633958D1D147CFB00CBB862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CocoaSkeletonCore/watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kornafeld.CocoaSkeletonCore-watchOS";
+				PRODUCT_NAME = CocoaSkeletonCore;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		C6721BB31D0DF384001097F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -723,6 +849,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C633959E1D147CFB00CBB862 /* Build configuration list for PBXNativeTarget "CocoaSkeletonCore-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C633958C1D147CFB00CBB862 /* Debug */,
+				C633958D1D147CFB00CBB862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C6721BA71D0DF384001097F0 /* Build configuration list for PBXProject "CocoaSkeletonCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
