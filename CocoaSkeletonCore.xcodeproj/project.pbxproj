@@ -39,6 +39,16 @@
 		C63395A81D147D3E00CBB862 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D7181D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 		C63395AB1D147DA700CBB862 /* CocoaSkeletonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C63395A91D147DA700CBB862 /* CocoaSkeletonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C63395BC1D147E3E00CBB862 /* CocoaSkeletonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C63395BA1D147E3E00CBB862 /* CocoaSkeletonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C63396051D14807400CBB862 /* NSManagedObjectContext+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395031D14709300CBB862 /* NSManagedObjectContext+Helper.swift */; };
+		C63396061D14807400CBB862 /* NSManagedObjectModel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395041D14709300CBB862 /* NSManagedObjectModel+Helper.swift */; };
+		C63396071D14807400CBB862 /* NSPersistentStoreCoordinator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395051D14709300CBB862 /* NSPersistentStoreCoordinator+Helper.swift */; };
+		C63396081D14807400CBB862 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395091D1470A700CBB862 /* App.swift */; };
+		C63396091D14807400CBB862 /* ContextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950A1D1470A700CBB862 /* ContextCoordinator.swift */; };
+		C633960A1D14807400CBB862 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950B1D1470A700CBB862 /* LogFormatter.swift */; };
+		C633961B1D14807800CBB862 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FD1D14708100CBB862 /* Entity.swift */; };
+		C633961C1D14807800CBB862 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FE1D14708100CBB862 /* Entity+CoreDataProperties.swift */; };
+		C633961D1D14807B00CBB862 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C63395011D14708B00CBB862 /* Data.xcdatamodeld */; };
+		C633962F1D1480C700CBB862 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D71C1D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 		C6E1D7691D0F9911007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D70E1D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 		C6E1D7981D0F9C11007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D7121D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 /* End PBXBuildFile section */
@@ -195,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C633962F1D1480C700CBB862 /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +680,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C63396051D14807400CBB862 /* NSManagedObjectContext+Helper.swift in Sources */,
+				C63396081D14807400CBB862 /* App.swift in Sources */,
+				C633961C1D14807800CBB862 /* Entity+CoreDataProperties.swift in Sources */,
+				C633961B1D14807800CBB862 /* Entity.swift in Sources */,
+				C633961D1D14807B00CBB862 /* Data.xcdatamodeld in Sources */,
+				C63396071D14807400CBB862 /* NSPersistentStoreCoordinator+Helper.swift in Sources */,
+				C63396091D14807400CBB862 /* ContextCoordinator.swift in Sources */,
+				C63396061D14807400CBB862 /* NSManagedObjectModel+Helper.swift in Sources */,
+				C633960A1D14807400CBB862 /* LogFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -960,6 +980,7 @@
 				C633958D1D147CFB00CBB862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C63395B71D147E1700CBB862 /* Build configuration list for PBXNativeTarget "CocoaSkeletonCore-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -968,6 +989,7 @@
 				C63395B91D147E1700CBB862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6721BA71D0DF384001097F0 /* Build configuration list for PBXProject "CocoaSkeletonCore" */ = {
 			isa = XCConfigurationList;

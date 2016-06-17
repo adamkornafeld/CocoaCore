@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C63395B11D147E1700CBB862"
-               BuildableName = "CocoaSkeletonCore-tvOS.framework"
+               BuildableName = "CocoaSkeletonCore.framework"
                BlueprintName = "CocoaSkeletonCore-tvOS"
                ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C63395B11D147E1700CBB862"
-            BuildableName = "CocoaSkeletonCore-tvOS.framework"
+            BuildableName = "CocoaSkeletonCore.framework"
             BlueprintName = "CocoaSkeletonCore-tvOS"
             ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C63395B11D147E1700CBB862"
-            BuildableName = "CocoaSkeletonCore-tvOS.framework"
+            BuildableName = "CocoaSkeletonCore.framework"
             BlueprintName = "CocoaSkeletonCore-tvOS"
             ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
          </BuildableReference>
