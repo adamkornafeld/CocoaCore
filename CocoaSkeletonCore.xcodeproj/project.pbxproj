@@ -18,6 +18,15 @@
 		C633950C1D1470A700CBB862 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395091D1470A700CBB862 /* App.swift */; };
 		C633950D1D1470A700CBB862 /* ContextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950A1D1470A700CBB862 /* ContextCoordinator.swift */; };
 		C633950E1D1470A700CBB862 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950B1D1470A700CBB862 /* LogFormatter.swift */; };
+		C63395521D147B8D00CBB862 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395091D1470A700CBB862 /* App.swift */; };
+		C63395631D147B8F00CBB862 /* ContextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950A1D1470A700CBB862 /* ContextCoordinator.swift */; };
+		C63395641D147B9100CBB862 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633950B1D1470A700CBB862 /* LogFormatter.swift */; };
+		C63395651D147B9300CBB862 /* NSPersistentStoreCoordinator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395051D14709300CBB862 /* NSPersistentStoreCoordinator+Helper.swift */; };
+		C63395661D147B9600CBB862 /* NSManagedObjectModel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395041D14709300CBB862 /* NSManagedObjectModel+Helper.swift */; };
+		C63395671D147B9800CBB862 /* NSManagedObjectContext+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63395031D14709300CBB862 /* NSManagedObjectContext+Helper.swift */; };
+		C63395681D147B9C00CBB862 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FD1D14708100CBB862 /* Entity.swift */; };
+		C63395691D147B9C00CBB862 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63394FE1D14708100CBB862 /* Entity+CoreDataProperties.swift */; };
+		C633956A1D147B9E00CBB862 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C63395011D14708B00CBB862 /* Data.xcdatamodeld */; };
 		C6E1D7691D0F9911007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D70E1D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 		C6E1D7981D0F9C11007B7630 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E1D7121D0F9636007B7630 /* CocoaLumberjackSwift.framework */; };
 /* End PBXBuildFile section */
@@ -210,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				C6E1D6F81D0F9636007B7630 /* Lumberjack.xcodeproj */,
-				C6721BAF1D0DF384001097F0 /* CocoaCore */,
+				C6721BAF1D0DF384001097F0 /* CocoaSkeletonCore */,
 				C6E1D7541D0F98B5007B7630 /* CocoaSkeletonCore-iOS */,
 				C6E1D7611D0F98C3007B7630 /* CocoaSkeletonCore-macOS */,
 				C6721BAE1D0DF384001097F0 /* Products */,
@@ -226,13 +235,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C6721BAF1D0DF384001097F0 /* CocoaCore */ = {
+		C6721BAF1D0DF384001097F0 /* CocoaSkeletonCore */ = {
 			isa = PBXGroup;
 			children = (
 				C60685CA1D0FB22C00E1238E /* Data */,
 				C60685B91D0FB21E00E1238E /* Controller */,
 			);
-			name = CocoaCore;
+			name = CocoaSkeletonCore;
 			path = SkeletonCore;
 			sourceTree = "<group>";
 		};
@@ -531,6 +540,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C63395631D147B8F00CBB862 /* ContextCoordinator.swift in Sources */,
+				C63395661D147B9600CBB862 /* NSManagedObjectModel+Helper.swift in Sources */,
+				C63395691D147B9C00CBB862 /* Entity+CoreDataProperties.swift in Sources */,
+				C63395681D147B9C00CBB862 /* Entity.swift in Sources */,
+				C633956A1D147B9E00CBB862 /* Data.xcdatamodeld in Sources */,
+				C63395521D147B8D00CBB862 /* App.swift in Sources */,
+				C63395651D147B9300CBB862 /* NSPersistentStoreCoordinator+Helper.swift in Sources */,
+				C63395641D147B9100CBB862 /* LogFormatter.swift in Sources */,
+				C63395671D147B9800CBB862 /* NSManagedObjectContext+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,7 +656,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/CocoaSkeletonCore/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaCore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaSkeletonCore;
 				PRODUCT_NAME = CocoaSkeletonCore;
 				SKIP_INSTALL = YES;
 			};
@@ -654,7 +672,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/CocoaSkeletonCore/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaCore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaSkeletonCore;
 				PRODUCT_NAME = CocoaSkeletonCore;
 				SKIP_INSTALL = YES;
 			};
@@ -674,7 +692,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaCore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaSkeletonCore;
 				PRODUCT_NAME = CocoaSkeletonCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -695,7 +713,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaCore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kornafeld.CocoaSkeletonCore;
 				PRODUCT_NAME = CocoaSkeletonCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;

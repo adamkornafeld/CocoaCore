@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C6E1D7521D0F98B5007B7630"
-               BuildableName = "CocoaCore.framework"
+               BuildableName = "CocoaSkeletonCore.framework"
                BlueprintName = "CocoaSkeletonCore-iOS"
                ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C6E1D7521D0F98B5007B7630"
-            BuildableName = "CocoaCore.framework"
+            BuildableName = "CocoaSkeletonCore.framework"
             BlueprintName = "CocoaSkeletonCore-iOS"
             ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C6E1D7521D0F98B5007B7630"
-            BuildableName = "CocoaCore.framework"
+            BuildableName = "CocoaSkeletonCore.framework"
             BlueprintName = "CocoaSkeletonCore-iOS"
             ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
          </BuildableReference>
