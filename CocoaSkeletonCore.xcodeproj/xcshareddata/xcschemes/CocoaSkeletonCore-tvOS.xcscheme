@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C63395861D147CFB00CBB862"
-               BuildableName = "CocoaSkeletonCore.framework"
-               BlueprintName = "CocoaSkeletonCore-watchOS"
+               BlueprintIdentifier = "C63395B11D147E1700CBB862"
+               BuildableName = "CocoaSkeletonCore-tvOS.framework"
+               BlueprintName = "CocoaSkeletonCore-tvOS"
                ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C63395861D147CFB00CBB862"
-            BuildableName = "CocoaSkeletonCore.framework"
-            BlueprintName = "CocoaSkeletonCore-watchOS"
+            BlueprintIdentifier = "C63395B11D147E1700CBB862"
+            BuildableName = "CocoaSkeletonCore-tvOS.framework"
+            BlueprintName = "CocoaSkeletonCore-tvOS"
             ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C63395861D147CFB00CBB862"
-            BuildableName = "CocoaSkeletonCore.framework"
-            BlueprintName = "CocoaSkeletonCore-watchOS"
+            BlueprintIdentifier = "C63395B11D147E1700CBB862"
+            BuildableName = "CocoaSkeletonCore-tvOS.framework"
+            BlueprintName = "CocoaSkeletonCore-tvOS"
             ReferencedContainer = "container:CocoaSkeletonCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
