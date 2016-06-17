@@ -4,6 +4,3 @@
 [submodule "External/siesta"]
 	path = External/siesta
 	url = https://github.com/bustoutsolutions/siesta.git
-[submodule "External/CryptoSwift"]
-	path = External/CryptoSwift
-	url = git@github.com:krzyzanowskim/CryptoSwift.git
