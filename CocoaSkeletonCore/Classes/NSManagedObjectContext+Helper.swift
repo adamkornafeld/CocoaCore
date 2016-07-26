@@ -11,7 +11,7 @@ import CoreData
 
 public extension NSManagedObjectContext {
     
-    public func managedObjectsOfClass(className: AnyClass, predicate: NSPredicate?, sortDescriptors: [NSSortDescriptor]?) -> [AnyObject]? {
+    public func managedObjectsOfClass(className: NSManagedObject.Type, predicate: NSPredicate?, sortDescriptors: [NSSortDescriptor]?) -> [AnyObject] {
         let entityName = NSStringFromClass(className)
         let request = NSFetchRequest(entityName: entityName)
         request.sortDescriptors = sortDescriptors
@@ -20,11 +20,11 @@ public extension NSManagedObjectContext {
         return managedObjects
     }
     
-    public func managedObjectsOfClass(className: AnyClass, predicate: NSPredicate?) -> [AnyObject]? {
+    public func managedObjectsOfClass(className: NSManagedObject.Type, predicate: NSPredicate?) -> [AnyObject] {
         return self.managedObjectsOfClass(className, predicate: predicate, sortDescriptors: nil)
     }
     
-    public func managedObjectOfClass(className: AnyClass, predicate: NSPredicate?) -> AnyObject? {
+    public func managedObjectOfClass(className: NSManagedObject.Type, predicate: NSPredicate?) -> AnyObject? {
         let results = self.managedObjectsOfClass(className, predicate: predicate)
         return results!.first
     }
