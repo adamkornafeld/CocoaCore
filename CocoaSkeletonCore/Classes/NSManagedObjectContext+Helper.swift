@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import CocoaLumberjackSwift
 
 public extension NSManagedObjectContext {
     
@@ -16,8 +17,14 @@ public extension NSManagedObjectContext {
         let request = NSFetchRequest(entityName: entityName)
         request.sortDescriptors = sortDescriptors
         request.predicate = predicate
-        let managedObjects = try! self.executeFetchRequest(request)
-        return managedObjects
+        do {
+            let managedObjects = try self.executeFetchRequest(request)
+            return (managedObjects.count > 0) ? managedObjects : []
+        }
+        catch let error {
+            DDLogError("\(error)")
+            return []
+        }
     }
     
     public func managedObjectsOfClass(className: NSManagedObject.Type, predicate: NSPredicate?) -> [AnyObject] {
@@ -26,12 +33,7 @@ public extension NSManagedObjectContext {
     
     public func managedObjectOfClass(className: NSManagedObject.Type, predicate: NSPredicate?) -> AnyObject? {
         let results = self.managedObjectsOfClass(className, predicate: predicate)
-        return results!.first
-    }
-    
-    public func managedObjectOfClass(className: AnyClass, predicate: NSPredicate?, sortDescriptors: [NSSortDescriptor]?) -> AnyObject? {
-        let results = self.managedObjectsOfClass(className, predicate: predicate, sortDescriptors: sortDescriptors)
-        return results!.first
+        return (results.count > 0) ? results.first : nil
     }
     
 }
