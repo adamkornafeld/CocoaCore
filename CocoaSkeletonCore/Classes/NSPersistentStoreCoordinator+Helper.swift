@@ -11,12 +11,11 @@ import CoreData
 
 extension NSPersistentStoreCoordinator {
     
-    class func coordinatorForModelWithName(name: String, options: NSDictionary, bundle: NSBundle) -> NSPersistentStoreCoordinator {
-        let model = NSManagedObjectModel.modelNamed(name, bundle: bundle)
+    class func coordinatorForModelWithName(name: String, storeType: String, options: [NSObject: AnyObject], bundle: NSBundle) throws -> NSPersistentStoreCoordinator {
+        let model = try NSManagedObjectModel.modelNamed(name, bundle: bundle)
         let coordinator = NSPersistentStoreCoordinator.init(managedObjectModel: model)
-        let storeURL = NSPersistentStoreCoordinator.storeURLForName(name)
-        
-        try! coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: options as [NSObject : AnyObject])
+        let storeURL = try NSPersistentStoreCoordinator.storeURLForName(name)
+        try coordinator.addPersistentStoreWithType(storeType, configuration: nil, URL: storeURL, options: options)
         return coordinator
     }
     
