@@ -14,13 +14,15 @@ public class App : NSObject {
     
     public static let instance = App()
     
-    public let contextCoordinator = ContextCoordinator()
+    public let contextCoordinator: ContextCoordinator
     
     public override init() {
         DDTTYLogger.sharedInstance().logFormatter = LogFormatter()
         DDLog.addLogger(DDTTYLogger.sharedInstance(), withLevel: .Verbose)
         
         DDLogVerbose("App init")
+        
+        contextCoordinator = ContextCoordinator(storeType: NSSQLiteStoreType, bundle:NSBundle(forClass: self.dynamicType))!
     }
     
 }
