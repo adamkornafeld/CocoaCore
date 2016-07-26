@@ -19,10 +19,10 @@ extension NSPersistentStoreCoordinator {
         return coordinator
     }
     
-    class func storeURLForName(name: String) -> NSURL {
+    class func storeURLForName(name: String) throws -> NSURL {
         let fileManager = NSFileManager.defaultManager()
-        let documentsDirectoryURL = try? fileManager.URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true);
-        return documentsDirectoryURL!.URLByAppendingPathComponent("sqlite")
+        let documentsDirectoryURL = try fileManager.URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true)
+        return documentsDirectoryURL.URLByAppendingPathComponent(name).URLByAppendingPathExtension("sqlite")
     }
     
 }
